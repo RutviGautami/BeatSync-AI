@@ -9,7 +9,7 @@
 ```
                       ┌──────────────────────────────────────┐
                       │    React 19 + Vite Frontend (SPA)    │
-                      │         (Deployed on Vercel)         │
+                      │  (https://beatsync-ai.vercel.app)    │
                       └──────────────────┬───────────────────┘
                                          │
                         HTTP / multipart │ Audio Uploads / Presets
