@@ -1,0 +1,51 @@
+# Large audio datasets (GTZAN dataset 1.3+ GB)
+archive/
+archive/**
+
+# Python virtual environment
+.venv/
+venv/
+env/
+ENV/
+*.venv
+
+# Python cache and bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# Node / Frontend build artifacts
+node_modules/
+*/node_modules/
+dist/
+*/dist/
+.vite/
+
+# Environment and secrets
+.env
+.env.local
+.env.*.local
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Anaconda projects / caches
+anaconda_projects/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+Untitled*.ipynb
+

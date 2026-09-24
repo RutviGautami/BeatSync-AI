@@ -1,0 +1,496 @@
+{
+  "champion_model": {
+    "name": "Support Vector Machine (SVC RBF)",
+    "accuracy": 91.34,
+    "f1_score": 91.33,
+    "pickle_file": "best_model.pkl"
+  },
+  "classes": [
+    "blues",
+    "classical",
+    "country",
+    "disco",
+    "hiphop",
+    "jazz",
+    "metal",
+    "pop",
+    "reggae",
+    "rock"
+  ],
+  "feature_count": 57,
+  "feature_names": [
+    "chroma_stft_mean",
+    "chroma_stft_var",
+    "rms_mean",
+    "rms_var",
+    "spectral_centroid_mean",
+    "spectral_centroid_var",
+    "spectral_bandwidth_mean",
+    "spectral_bandwidth_var",
+    "rolloff_mean",
+    "rolloff_var",
+    "zero_crossing_rate_mean",
+    "zero_crossing_rate_var",
+    "harmony_mean",
+    "harmony_var",
+    "perceptr_mean",
+    "perceptr_var",
+    "tempo",
+    "mfcc1_mean",
+    "mfcc1_var",
+    "mfcc2_mean",
+    "mfcc2_var",
+    "mfcc3_mean",
+    "mfcc3_var",
+    "mfcc4_mean",
+    "mfcc4_var",
+    "mfcc5_mean",
+    "mfcc5_var",
+    "mfcc6_mean",
+    "mfcc6_var",
+    "mfcc7_mean",
+    "mfcc7_var",
+    "mfcc8_mean",
+    "mfcc8_var",
+    "mfcc9_mean",
+    "mfcc9_var",
+    "mfcc10_mean",
+    "mfcc10_var",
+    "mfcc11_mean",
+    "mfcc11_var",
+    "mfcc12_mean",
+    "mfcc12_var",
+    "mfcc13_mean",
+    "mfcc13_var",
+    "mfcc14_mean",
+    "mfcc14_var",
+    "mfcc15_mean",
+    "mfcc15_var",
+    "mfcc16_mean",
+    "mfcc16_var",
+    "mfcc17_mean",
+    "mfcc17_var",
+    "mfcc18_mean",
+    "mfcc18_var",
+    "mfcc19_mean",
+    "mfcc19_var",
+    "mfcc20_mean",
+    "mfcc20_var"
+  ],
+  "models_leaderboard": [
+    {
+      "name": "Support Vector Machine (SVC RBF)",
+      "accuracy": 91.34,
+      "f1_score": 91.33,
+      "train_time_sec": 8.51,
+      "description": "Radial Basis Function kernel maximizing margin boundaries.",
+      "classification_report": {
+        "blues": {
+          "precision": 89.9,
+          "recall": 93.5,
+          "f1": 91.7
+        },
+        "classical": {
+          "precision": 91.5,
+          "recall": 98.0,
+          "f1": 94.7
+        },
+        "country": {
+          "precision": 87.3,
+          "recall": 86.4,
+          "f1": 86.9
+        },
+        "disco": {
+          "precision": 88.4,
+          "recall": 88.0,
+          "f1": 88.2
+        },
+        "hiphop": {
+          "precision": 92.9,
+          "recall": 91.0,
+          "f1": 91.9
+        },
+        "jazz": {
+          "precision": 91.7,
+          "recall": 93.5,
+          "f1": 92.6
+        },
+        "metal": {
+          "precision": 97.9,
+          "recall": 95.5,
+          "f1": 96.7
+        },
+        "pop": {
+          "precision": 94.0,
+          "recall": 86.5,
+          "f1": 90.1
+        },
+        "reggae": {
+          "precision": 89.7,
+          "recall": 91.5,
+          "f1": 90.6
+        },
+        "rock": {
+          "precision": 90.4,
+          "recall": 89.5,
+          "f1": 89.9
+        }
+      }
+    },
+    {
+      "name": "K-Nearest Neighbors (KNN)",
+      "accuracy": 89.34,
+      "f1_score": 89.32,
+      "train_time_sec": 0.0,
+      "description": "Instance-based learning using Euclidean distance in scaled spectral space.",
+      "classification_report": {
+        "blues": {
+          "precision": 92.6,
+          "recall": 87.5,
+          "f1": 90.0
+        },
+        "classical": {
+          "precision": 88.7,
+          "recall": 95.0,
+          "f1": 91.7
+        },
+        "country": {
+          "precision": 91.0,
+          "recall": 81.4,
+          "f1": 85.9
+        },
+        "disco": {
+          "precision": 82.5,
+          "recall": 94.5,
+          "f1": 88.1
+        },
+        "hiphop": {
+          "precision": 89.4,
+          "recall": 92.5,
+          "f1": 90.9
+        },
+        "jazz": {
+          "precision": 91.6,
+          "recall": 87.0,
+          "f1": 89.2
+        },
+        "metal": {
+          "precision": 97.0,
+          "recall": 96.5,
+          "f1": 96.7
+        },
+        "pop": {
+          "precision": 94.8,
+          "recall": 81.5,
+          "f1": 87.6
+        },
+        "reggae": {
+          "precision": 81.1,
+          "recall": 94.5,
+          "f1": 87.3
+        },
+        "rock": {
+          "precision": 88.3,
+          "recall": 83.0,
+          "f1": 85.6
+        }
+      }
+    },
+    {
+      "name": "MLP Neural Network",
+      "accuracy": 87.29,
+      "f1_score": 87.32,
+      "train_time_sec": 10.71,
+      "description": "Deep multi-layer feedforward artificial neural network with ReLU & Adam.",
+      "classification_report": {
+        "blues": {
+          "precision": 87.3,
+          "recall": 86.0,
+          "f1": 86.6
+        },
+        "classical": {
+          "precision": 94.3,
+          "recall": 92.0,
+          "f1": 93.1
+        },
+        "country": {
+          "precision": 79.7,
+          "recall": 84.9,
+          "f1": 82.2
+        },
+        "disco": {
+          "precision": 86.7,
+          "recall": 85.0,
+          "f1": 85.9
+        },
+        "hiphop": {
+          "precision": 87.1,
+          "recall": 87.5,
+          "f1": 87.3
+        },
+        "jazz": {
+          "precision": 87.0,
+          "recall": 90.0,
+          "f1": 88.5
+        },
+        "metal": {
+          "precision": 91.7,
+          "recall": 93.5,
+          "f1": 92.6
+        },
+        "pop": {
+          "precision": 94.4,
+          "recall": 83.5,
+          "f1": 88.6
+        },
+        "reggae": {
+          "precision": 85.3,
+          "recall": 87.0,
+          "f1": 86.1
+        },
+        "rock": {
+          "precision": 81.1,
+          "recall": 83.5,
+          "f1": 82.3
+        }
+      }
+    },
+    {
+      "name": "Random Forest",
+      "accuracy": 87.14,
+      "f1_score": 87.09,
+      "train_time_sec": 1.04,
+      "description": "Ensemble of 150 bagged decision trees with variance reduction.",
+      "classification_report": {
+        "blues": {
+          "precision": 86.3,
+          "recall": 88.5,
+          "f1": 87.4
+        },
+        "classical": {
+          "precision": 90.6,
+          "recall": 96.5,
+          "f1": 93.4
+        },
+        "country": {
+          "precision": 82.1,
+          "recall": 82.9,
+          "f1": 82.5
+        },
+        "disco": {
+          "precision": 84.8,
+          "recall": 84.0,
+          "f1": 84.4
+        },
+        "hiphop": {
+          "precision": 93.6,
+          "recall": 88.0,
+          "f1": 90.7
+        },
+        "jazz": {
+          "precision": 83.4,
+          "recall": 90.5,
+          "f1": 86.8
+        },
+        "metal": {
+          "precision": 87.1,
+          "recall": 94.5,
+          "f1": 90.6
+        },
+        "pop": {
+          "precision": 94.8,
+          "recall": 82.5,
+          "f1": 88.2
+        },
+        "reggae": {
+          "precision": 81.9,
+          "recall": 88.0,
+          "f1": 84.8
+        },
+        "rock": {
+          "precision": 88.9,
+          "recall": 76.0,
+          "f1": 81.9
+        }
+      }
+    },
+    {
+      "name": "Gradient Boosting",
+      "accuracy": 86.99,
+      "f1_score": 86.99,
+      "train_time_sec": 214.18,
+      "description": "Sequential boosted ensemble minimizing gradient loss.",
+      "classification_report": {
+        "blues": {
+          "precision": 88.8,
+          "recall": 83.5,
+          "f1": 86.1
+        },
+        "classical": {
+          "precision": 91.2,
+          "recall": 94.0,
+          "f1": 92.6
+        },
+        "country": {
+          "precision": 80.2,
+          "recall": 85.4,
+          "f1": 82.7
+        },
+        "disco": {
+          "precision": 84.1,
+          "recall": 87.0,
+          "f1": 85.5
+        },
+        "hiphop": {
+          "precision": 91.6,
+          "recall": 87.0,
+          "f1": 89.2
+        },
+        "jazz": {
+          "precision": 85.9,
+          "recall": 88.0,
+          "f1": 86.9
+        },
+        "metal": {
+          "precision": 92.7,
+          "recall": 95.0,
+          "f1": 93.8
+        },
+        "pop": {
+          "precision": 91.5,
+          "recall": 80.5,
+          "f1": 85.6
+        },
+        "reggae": {
+          "precision": 84.0,
+          "recall": 86.5,
+          "f1": 85.2
+        },
+        "rock": {
+          "precision": 81.4,
+          "recall": 83.0,
+          "f1": 82.2
+        }
+      }
+    },
+    {
+      "name": "Logistic Regression",
+      "accuracy": 71.97,
+      "f1_score": 71.78,
+      "train_time_sec": 0.53,
+      "description": "Multinomial linear classifier with L2 regularization.",
+      "classification_report": {
+        "blues": {
+          "precision": 66.8,
+          "recall": 70.5,
+          "f1": 68.6
+        },
+        "classical": {
+          "precision": 90.4,
+          "recall": 95.0,
+          "f1": 92.6
+        },
+        "country": {
+          "precision": 64.5,
+          "recall": 59.3,
+          "f1": 61.8
+        },
+        "disco": {
+          "precision": 63.8,
+          "recall": 66.0,
+          "f1": 64.9
+        },
+        "hiphop": {
+          "precision": 75.2,
+          "recall": 60.5,
+          "f1": 67.0
+        },
+        "jazz": {
+          "precision": 78.6,
+          "recall": 84.5,
+          "f1": 81.4
+        },
+        "metal": {
+          "precision": 81.0,
+          "recall": 85.5,
+          "f1": 83.2
+        },
+        "pop": {
+          "precision": 79.4,
+          "recall": 77.0,
+          "f1": 78.2
+        },
+        "reggae": {
+          "precision": 66.0,
+          "recall": 70.0,
+          "f1": 68.0
+        },
+        "rock": {
+          "precision": 52.8,
+          "recall": 51.5,
+          "f1": 52.2
+        }
+      }
+    },
+    {
+      "name": "Decision Tree",
+      "accuracy": 63.41,
+      "f1_score": 63.48,
+      "train_time_sec": 0.61,
+      "description": "Single decision tree splitting on Gini impurity.",
+      "classification_report": {
+        "blues": {
+          "precision": 60.5,
+          "recall": 63.5,
+          "f1": 62.0
+        },
+        "classical": {
+          "precision": 82.5,
+          "recall": 85.4,
+          "f1": 84.0
+        },
+        "country": {
+          "precision": 52.6,
+          "recall": 56.3,
+          "f1": 54.4
+        },
+        "disco": {
+          "precision": 56.1,
+          "recall": 59.5,
+          "f1": 57.8
+        },
+        "hiphop": {
+          "precision": 63.2,
+          "recall": 61.0,
+          "f1": 62.1
+        },
+        "jazz": {
+          "precision": 63.5,
+          "recall": 60.0,
+          "f1": 61.7
+        },
+        "metal": {
+          "precision": 77.4,
+          "recall": 77.0,
+          "f1": 77.2
+        },
+        "pop": {
+          "precision": 74.3,
+          "recall": 65.0,
+          "f1": 69.3
+        },
+        "reggae": {
+          "precision": 63.6,
+          "recall": 63.0,
+          "f1": 63.3
+        },
+        "rock": {
+          "precision": 42.9,
+          "recall": 43.5,
+          "f1": 43.2
+        }
+      }
+    }
+  ],
+  "updated_at": "2026-09-18 09:17:18"
+}
